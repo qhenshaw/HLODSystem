@@ -2,8 +2,7 @@
     "name": "HLODEditor",
     "rootNamespace": "",
     "references": [
-        "HLOD",
-        "UnityMeshSimplifier"
+        "HLOD"
     ],
     "includePlatforms": [
         "Editor"
