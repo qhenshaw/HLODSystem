@@ -23,6 +23,10 @@ namespace Unity.HLODSystem.Simplifier
         protected override IEnumerator GetSimplifiedMesh(Utils.WorkingMesh origin, float quality, Action<Utils.WorkingMesh> resultCallback)
         {
             var meshSimplifier = new global::UnityMeshSimplifier.MeshSimplifier();
+            meshSimplifier.EnableSmartLink = true;
+            meshSimplifier.PreserveBorderEdges = true;
+            meshSimplifier.PreserveUVSeamEdges = true;
+            meshSimplifier.PreserveUVFoldoverEdges = true;
             meshSimplifier.Vertices = origin.vertices;
             meshSimplifier.Normals = origin.normals;
             meshSimplifier.Tangents = origin.tangents;
