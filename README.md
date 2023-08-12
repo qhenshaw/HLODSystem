@@ -35,22 +35,10 @@ You need Git Client which can work with GitHub.
 
 If you don't have Git installed on your machine, download and install it from [Git Home][gitHome].
 
-
-### Connecting to GitHub with SSH
-To clone the project, your Git must be configured to work with SSH Authentication, as HLODSystem uses SSH Authentication to work with Git Submodules. Check [this][gitSSHSetup] link to set up your git to use SSH to connect to GitHub. 
-
 ## Getting the project
-### Cloning
-The project uses a number of other projects as dependencies, and they are included into it as Git Submodules.
-To have a fully working project, you should those submodules included into the project after you clone the project.
-
-First, run the following command to clone the project:
-```sh
-$ git clone git@github.com:Unity-Technologies/HLODSystem.git
+Use the Package Manager and use Add package from git URL, using the following: 
 ```
-After cloning is finished, navigate to the root folder of the project, and run the following command to initialize and clone all submodules:
-```sh
-$ git submodule update --init --recursive
+https://github.com/qhenshaw/HLODSystem.git?path=com.unity.hlod
 ```
 
 ## How to use
